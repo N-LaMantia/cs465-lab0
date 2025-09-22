@@ -5,49 +5,62 @@
 
 }
 
+header {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #cccccc00;
+}
+
+audio {
+    display: block;
+    margin: 20px auto;
+    position: fixed;
+    bottom: 50px;
+
+}
+
 body {
 
     font-family: Arial, sans-serif;
 
-    background-image: url(Assets\pianoMan.jpeg);
+    background-image: url(Assets/pianoMan.jpeg);
+    background-color: rgba(0, 0, 0, 0.1);
     background-position: center;
-    background-size: cover;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
     height: 100vh;
 
 
 }
 
-header navbar a {
-
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0);
-    padding: 1200px 100px;
-    display: block;
-    text-align: right;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    transition: color 0.3s ease;
-    position: relative;
-    z-index: 1;
-    margin-top: 20px;
-    margin-right: 20px;
-    border: 2px solid rgba(255, 255, 255, 0);
-    border-radius: 5px;
-
-
-
+.navbar {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 footer {
 
     position: absolute;
-    bottom: 10;
+    bottom: 0;
     width: 100%;
-    height: 60px;
+    height: auto;
     background-color: #333;
     color: white;
     text-align: center;
-    line-height: 60px;
+    line-height: 1;
+    padding: 10px 0;
 
+}
+
+footer a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
